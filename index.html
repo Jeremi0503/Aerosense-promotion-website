@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AeroSense makes healthier indoor air simple with smart humidity control and real-time air quality insights."
+    />
+    <meta name="theme-color" content="#f6faff" />
+    <title>AeroSense — Breathe Smarter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="AeroSense home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M7 36.5C9.4 18.4 21.3 7 41 6c-1.6 19.8-11.7 32.4-30 35.1L7 36.5Z" fill="currentColor" />
+            <path d="M14 37 33 15M20 30l-1-9m7 2 9-1m-15 13-7-2" stroke="white" stroke-width="2.3" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span>AeroSense</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-works">How It Works</a>
+        <a class="nav-link" href="#dashboard">Dashboard</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+
+      <a class="button button-small header-cta" href="#get-started">Get Started</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-backdrop" aria-hidden="true">
+          <div class="window-grid"></div>
+          <div class="plant plant-one"></div>
+          <div class="plant plant-two"></div>
+          <div class="air-flow flow-one"></div>
+          <div class="air-flow flow-two"></div>
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">A healthier home starts here</p>
+          <h1>Breathe Smarter<br />with <span>AeroSense</span></h1>
+          <p class="hero-copy">
+            An intelligent indoor air quality system that monitors your
+            environment and automatically regulates humidity for a healthier,
+            more comfortable space.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#get-started">Get Started <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="#features">Learn More <span aria-hidden="true">▶</span></a>
+          </div>
+        </div>
+
+        <div class="device" aria-label="AeroSense air quality monitor">
+          <div class="device-face">
+            <span class="device-logo" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <path d="M7 36.5C9.4 18.4 21.3 7 41 6c-1.6 19.8-11.7 32.4-30 35.1L7 36.5Z" fill="currentColor" />
+                <path d="M14 37 33 15M20 30l-1-9m7 2 9-1m-15 13-7-2" stroke="white" stroke-width="2.3" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="device-name">AeroSense</span>
+            <span class="device-light"></span>
+          </div>
+          <div class="device-side"></div>
+        </div>
+        <div class="hero-glow" aria-hidden="true"></div>
+      </section>
+
+      <section class="benefits" id="features" aria-label="AeroSense features">
+        <article class="benefit">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 12h13a4 4 0 1 0-4-4M2 17h21a4 4 0 1 1-4 4M5 22h7" /></svg>
+          <h2>Real-Time<br />Air Quality Monitoring</h2>
+        </article>
+        <article class="benefit">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C13 8 8 13.2 8 19a8 8 0 0 0 16 0c0-5.8-5-11-8-16Z" /><path d="M12.5 20a3.5 3.5 0 0 0 3.5 3.5" /></svg>
+          <h2>Automatic<br />Humidity Control</h2>
+        </article>
+        <article class="benefit">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 27h25M7 24V9m0 15 7-8 5 4 8-11m-4 0h4v4" /><path d="M11 23v-5m6 5v-3m6 3v-6" /></svg>
+          <h2>Live Dashboard<br />&amp; Alerts</h2>
+        </article>
+        <article class="benefit">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 27 7v8c0 7-4.8 11.6-11 14-6.2-2.4-11-7-11-14V7l11-4Z" /><path d="m11 16 3.5 3.5L21 13" /></svg>
+          <h2>Healthier Indoor<br />Environment</h2>
+        </article>
+      </section>
+
+      <section class="humidity section-wrap" id="how-it-works">
+        <div class="section-copy">
+          <span class="tag">Smart environment</span>
+          <h2>All-in-One<br />Humidity Regulation</h2>
+          <p>
+            AeroSense intelligently detects whether your space is too dry or too
+            humid — and automatically activates humidification or
+            dehumidification as needed.
+          </p>
+          <ul class="check-list">
+            <li>Humidify when humidity is low</li>
+            <li>Dehumidify when humidity is high</li>
+            <li>Keep your space in the ideal range (40–60% RH)</li>
+          </ul>
+        </div>
+        <div class="humidity-card">
+          <div class="current-reading">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 7a5 5 0 0 1 10 0v19.2a10 10 0 1 1-10 0V7Z" /><path d="M23 13v20m0 0a4 4 0 1 0 4 4" /><path d="M36 17c-2.3 3.2-5 5.7-5 9a5 5 0 0 0 10 0c0-3.3-2.7-5.8-5-9Z" /></svg>
+            <div><strong>35% RH</strong><span>Current Humidity</span></div>
+          </div>
+          <div class="down-arrow" aria-hidden="true">↓</div>
+          <h3>Automatic Detection</h3>
+          <div class="humidity-levels">
+            <article class="level level-low">
+              <span class="level-icon">●</span><strong>Below 40%</strong><span class="level-action">Humidify</span>
+            </article>
+            <article class="level level-good">
+              <span class="level-icon">✓</span><strong>40–60%</strong><span class="level-action">Ideal</span>
+            </article>
+            <article class="level level-high">
+              <span class="level-icon">≋</span><strong>Above 60%</strong><span class="level-action">Dehumidify</span>
+            </article>
+          </div>
+          <p class="card-caption">Smart. Automatic. Effortless.</p>
+        </div>
+      </section>
+
+      <section class="dashboard-panel" id="dashboard">
+        <div class="dashboard-copy">
+          <span class="tag tag-outline">Real-time insights</span>
+          <h2>Monitor Your<br />Air Quality Anytime</h2>
+          <p>View real-time data, track trends, and receive instant alerts — all from your easy-to-use dashboard.</p>
+          <ul class="dashboard-list">
+            <li>Temperature &amp; Humidity</li>
+            <li>CO₂ Levels</li>
+            <li>PM2.5 &amp; PM10</li>
+            <li>Device Status &amp; Alerts</li>
+          </ul>
+          <a class="button button-dashboard" href="#get-started">View Dashboard <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="laptop" aria-label="Preview of the AeroSense air quality dashboard">
+          <div class="laptop-screen">
+            <div class="app-sidebar">
+              <div class="app-brand"><span>◈</span> AeroSense</div>
+              <div class="app-menu active">▦ &nbsp; Dashboard</div>
+              <div class="app-menu">◉ &nbsp; Devices</div>
+              <div class="app-menu">♧ &nbsp; Alerts</div>
+              <div class="app-menu">⚙ &nbsp; Settings</div>
+            </div>
+            <div class="app-main">
+              <div class="app-heading"><strong>Living Room</strong><span class="online">Online</span><small>Last Updated: 2 min ago</small></div>
+              <div class="metric-grid">
+                <div class="metric"><span>🌡</span><strong>22.5°C</strong><small>Temperature</small></div>
+                <div class="metric"><span>💧</span><strong>48%</strong><small>Humidity</small></div>
+                <div class="metric"><span>☁</span><strong>412 ppm</strong><small>CO₂</small></div>
+                <div class="metric"><span>✣</span><strong>12 μg/m³</strong><small>PM2.5</small></div>
+                <div class="metric"><span>✣</span><strong>18 μg/m³</strong><small>PM10</small></div>
+              </div>
+              <div class="chart-row">
+                <div class="chart-card">
+                  <div class="chart-title">Humidity Trend <span>— Humidity &nbsp; <i>—</i> Target Range</span></div>
+                  <div class="chart">
+                    <div class="chart-labels"><span>60%</span><span>40%</span><span>20%</span></div>
+                    <svg viewBox="0 0 360 95" preserveAspectRatio="none" aria-hidden="true">
+                      <path class="chart-target" d="M0 33h360M0 65h360" />
+                      <path class="chart-area" d="M0 52 20 48 40 56 60 43 80 46 100 39 120 51 140 44 160 55 180 47 200 50 220 37 240 42 260 48 280 35 300 44 320 39 340 48 360 42v53H0Z" />
+                      <path class="chart-line" d="M0 52 20 48 40 56 60 43 80 46 100 39 120 51 140 44 160 55 180 47 200 50 220 37 240 42 260 48 280 35 300 44 320 39 340 48 360 42" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="status-card"><strong>Humidity Status</strong><span>✓</span><b>Normal</b><small>(40–60%)</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+      </section>
+
+      <section class="closing-banner" id="about">
+        <div class="closing-brand">
+          <span class="closing-mark" aria-hidden="true">◈</span>
+          <div><strong>AeroSense</strong><span>Smarter Air. Healthier You.</span></div>
+        </div>
+        <div class="closing-feature"><span>⌂</span><p>Perfect for Homes<br />and Offices</p></div>
+        <div class="closing-feature"><span>ϟ</span><p>Easy Setup<br />&amp; Operation</p></div>
+        <div class="closing-feature"><span>♧</span><p>Reliable &amp;<br />Energy Efficient</p></div>
+        <a class="button button-light" href="#get-started">Get Started Today <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="get-started">
+      <a class="brand footer-brand" href="#home" aria-label="AeroSense home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path d="M7 36.5C9.4 18.4 21.3 7 41 6c-1.6 19.8-11.7 32.4-30 35.1L7 36.5Z" fill="currentColor" />
+            <path d="M14 37 33 15M20 30l-1-9m7 2 9-1m-15 13-7-2" stroke="white" stroke-width="2.3" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span>AeroSense</span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a><a href="#features">Features</a><a href="#how-it-works">How It Works</a><a href="#dashboard">Dashboard</a><a href="#about">About</a>
+      </nav>
+      <div class="social-links" aria-label="Social links">
+        <a href="#get-started" aria-label="GitHub">gh</a>
+        <a href="#get-started" aria-label="YouTube">▶</a>
+        <a href="#get-started" aria-label="LinkedIn">in</a>
+      </div>
+    </footer>
+  </body>
+</html>
